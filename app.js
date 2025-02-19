@@ -62,13 +62,7 @@ function changeAnimalLocations() {
     animal.partyLocation = getRandomLocation()
   }
 
-  drawWaterfallAnimals()
-
-  drawDesertAnimals()
-
-  drawAnimalsByLocation('reef')
-
-  drawAnimalsByLocation('wetlands')
+  drawAllAnimalsAtLocations()
 }
 
 function getRandomLocation() {
@@ -135,17 +129,20 @@ function drawAnimalsByLocation(locationName) {
 
 }
 
+function drawAllAnimalsAtLocations() {
+  drawWaterfallAnimals()
+
+  drawDesertAnimals()
+
+  drawAnimalsByLocation('reef')
+
+  drawAnimalsByLocation('wetlands')
+}
+
 // !SECTION
 
 // SECTION page load 🔃
 
-drawWaterfallAnimals()
-
-drawDesertAnimals()
-
-drawAnimalsByLocation('reef')
-
-drawAnimalsByLocation('wetlands')
-
+drawAllAnimalsAtLocations()
 
 // !SECTION
