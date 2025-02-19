@@ -76,4 +76,19 @@ function drawWaterfallAnimals() {
   waterfallElem.innerText = emojis
 }
 
+function drawDesertAnimals() {
+  let emojis = ''
+
+  const desertAnimals = partyAnimals.filter((animal) => animal.partyLocation == 'desert')
+
+  for (let i = 0; i < desertAnimals.length; i++) {
+    const animal = desertAnimals[i];
+    emojis += animal.emoji
+  }
+
+  const desertElem = document.getElementById('desert')
+
+  desertElem.innerText = emojis
+}
+
 // !SECTION
