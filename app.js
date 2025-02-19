@@ -74,6 +74,7 @@ function drawWaterfallAnimals() {
   const waterfallElem = document.getElementById('waterfall')
 
   waterfallElem.innerText = emojis
+
 }
 
 function drawDesertAnimals() {
@@ -90,5 +91,38 @@ function drawDesertAnimals() {
 
   desertElem.innerText = emojis
 }
+
+function drawAnimalsByLocation(locationName) {
+
+  let emojis = ''
+
+  const animalsAtLocation = partyAnimals.filter((animal) => animal.partyLocation == locationName)
+
+  console.log('filtering by location name', locationName);
+  console.log(animalsAtLocation);
+
+  for (let i = 0; i < animalsAtLocation.length; i++) {
+    const animal = animalsAtLocation[i];
+    emojis += animal.emoji
+  }
+
+  const partyLocationElem = document.getElementById(locationName)
+
+  partyLocationElem.innerText = emojis
+
+}
+
+// !SECTION
+
+// SECTION page load 🔃
+
+drawWaterfallAnimals()
+
+drawDesertAnimals()
+
+drawAnimalsByLocation('reef')
+
+drawAnimalsByLocation('wetlands')
+
 
 // !SECTION
