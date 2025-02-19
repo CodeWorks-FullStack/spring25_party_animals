@@ -59,14 +59,14 @@ const locations = ['wetlands', 'desert', 'reef', 'waterfall']
 function changeAnimalLocations() {
   for (let i = 0; i < partyAnimals.length; i++) {
     const animal = partyAnimals[i]
-    const randomLocationIndex = Math.floor(Math.random() * locations.length)
-    const randomLocation = locations[randomLocationIndex]
-    animal.partyLocation = randomLocation
+    animal.partyLocation = getRandomLocation()
   }
 }
 
 function getRandomLocation() {
-
+  const randomLocationIndex = Math.floor(Math.random() * locations.length)
+  const randomLocation = locations[randomLocationIndex]
+  return randomLocation
 }
 
 // !SECTION
