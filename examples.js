@@ -59,14 +59,8 @@ doggies.splice(2, 0, {
   favoriteToys: ['rocks']
 })
 
+// removes 1 element at index of 0
 doggies.splice(0, 1)
-
-console.log(doggies);
-
-
-// NOTE find is a higher-order-function
-
-
 
 // a different way of writing a function
 const getDoggy2 = function () {
@@ -89,6 +83,8 @@ function getDoggy(doggy) {
 
   return false
 }
+
+// NOTE find is a higher order function (a function that takes in another function as an argument)
 // NOTE getDoggy is a callback function (a function that some other function will invoke and run for us)
 const foundDoggy = doggies.find(getDoggy)
 
@@ -100,9 +96,9 @@ const otherFoundDoggy = doggies.find((doggy) => {
   return false
 })
 
-
 // look through the doggies and find me the doggy where the doggy's name is mocha
 const mochaDoggy = doggies.find(dog => dog.name == 'mocha')
+
 // finds the FIRST dog that is stinky
 const stinkyDoggy = doggies.find(dog => dog.isStinky == true)
 
@@ -120,6 +116,7 @@ console.log('stinky dogs', stinkyDogs);
 
 
 // const otherStinkyDogs = doggies.filter(dog => dog.isStinky == true)
+// NOTE finds all of the dogs that are stinky and returns them in a new array
 const otherStinkyDogs = doggies.filter(dog => dog.isStinky)
 
 console.log('other stinky dogs', otherStinkyDogs);
@@ -127,5 +124,3 @@ console.log('other stinky dogs', otherStinkyDogs);
 // NOTE forEach is essentially a for loop
 doggies.forEach(dog => dog.favoriteToys.push('bone'))
 
-
-console.log(doggies);
