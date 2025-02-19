@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  justify-content: space-between;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.party-spot {
+  min-height: 30dvh;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 2em;
+}
+
+.waterfall-bg {
+  background-image: url(https://images.unsplash.com/photo-1560851691-ebb64b584d3d?q=80&w=2398&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.reef-bg {
+  background-image: url(https://images.unsplash.com/photo-1533713692156-f70938dc0d54?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dW5kZXJ3YXRlcnxlbnwwfHwwfHx8Mg%3D%3D);
+}
+
+.desert-bg {
+  background-image: url(https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZGVzZXJ0fGVufDB8MHwwfHx8Mg%3D%3D);
+}
+
+.wetlands-bg {
+  background-image: url(https://images.unsplash.com/photo-1595530096850-0fa0ad98d5a4?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fG1hcnNofGVufDB8MHwwfHx8Mg%3D%3D);
+}
