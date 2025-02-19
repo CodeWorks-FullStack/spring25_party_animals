@@ -54,6 +54,13 @@ const partyAnimals = [
 
 // SECTION logic/actions ⚙️
 
+function changeAnimalLocations() {
+  for (let i = 0; i < partyAnimals.length; i++) {
+    const animal = partyAnimals[i]
+    animal.partyLocation = 'wetlands'
+  }
+}
+
 // !SECTION
 
 // SECTION draw ✏️
