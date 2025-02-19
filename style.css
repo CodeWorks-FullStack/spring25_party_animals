@@ -14,6 +14,11 @@ main {
   background-size: cover;
   background-position: center;
   margin-bottom: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  text-shadow: 1px 1px black;
 }
 
 .waterfall-bg {

@@ -1,3 +1,5 @@
+// SECTION state 🧠 (global variables)
+
 const partyAnimals = [
   {
     name: 'mike t',
@@ -35,14 +37,43 @@ const partyAnimals = [
     partyLocation: 'reef'
   },
   {
-    name: 'steve',
-    emoji: '🐉',
-    partyLocation: 'desert'
-  },
-  {
     name: 'doug',
     emoji: '🦎',
     partyLocation: 'desert'
   },
+  {
+    name: 'steve',
+    emoji: '🐉',
+    partyLocation: 'desert'
+  },
 
 ]
+
+// !SECTION
+
+
+// SECTION logic/actions ⚙️
+
+// !SECTION
+
+// SECTION draw ✏️
+
+function drawWaterfallAnimals() {
+  let emojis = ''
+
+  for (let i = 0; i < partyAnimals.length; i++) {
+    const animal = partyAnimals[i]
+    if (animal.partyLocation == 'waterfall') {
+      emojis += animal.emoji
+    }
+  }
+
+
+  console.log('waterfall animal emojis', emojis);
+
+  const waterfallElem = document.getElementById('waterfall')
+
+  waterfallElem.innerText = emojis
+}
+
+// !SECTION
