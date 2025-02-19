@@ -130,6 +130,20 @@ function drawAnimalsByLocation(locationName) {
 }
 
 function drawAllAnimalsAtLocations() {
+
+  // kinda fancy
+  // drawDesertAnimals()
+  // drawWaterfallAnimals()
+  // drawAnimalsByLocation('desert')
+  // drawAnimalsByLocation('reef')
+
+  // very fancy
+  // for (let i = 0; i < locations.length; i++) {
+  //   const location = locations[i];
+  //   drawAnimalsByLocation(location)
+  // }
+
+  // too fancy
   locations.forEach(drawAnimalsByLocation)
 }
 
