@@ -61,6 +61,14 @@ function changeAnimalLocations() {
     const animal = partyAnimals[i]
     animal.partyLocation = getRandomLocation()
   }
+
+  drawWaterfallAnimals()
+
+  drawDesertAnimals()
+
+  drawAnimalsByLocation('reef')
+
+  drawAnimalsByLocation('wetlands')
 }
 
 function getRandomLocation() {
