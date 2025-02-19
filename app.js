@@ -130,13 +130,10 @@ function drawAnimalsByLocation(locationName) {
 }
 
 function drawAllAnimalsAtLocations() {
-  drawWaterfallAnimals()
-
-  drawDesertAnimals()
-
-  drawAnimalsByLocation('reef')
-
-  drawAnimalsByLocation('wetlands')
+  for (let i = 0; i < locations.length; i++) {
+    const location = locations[i];
+    drawAnimalsByLocation(location)
+  }
 }
 
 // !SECTION
